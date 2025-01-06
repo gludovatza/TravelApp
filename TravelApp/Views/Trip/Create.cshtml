@@ -1,0 +1,15 @@
+﻿@model Trip
+
+<form method="POST" asp-action="Create" asp-controller="Trip">
+    <p>
+        <label for="destination">Destination</label>
+        <input asp-for="Destination" />
+    </p>
+    <p>
+        <label for="description">Description</label>
+        <input asp-for="Description" />
+    </p>
+    <p>
+        <input type="submit" value="Mentés" />
+    </p>
+</form>

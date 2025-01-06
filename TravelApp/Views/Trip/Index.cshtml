@@ -1,0 +1,13 @@
+﻿@model IEnumerable<TravelApp.Models.Trip>
+
+@foreach (var item in Model)
+{
+    <p>
+        @item.Description -- @item.Destination
+        
+        <form asp-action="Delete" method="post">
+            <input type="hidden" name="Id" value="@item.Id" />
+            <input class="btn btn-danger" type="submit" value="Törlés" />
+        </form>
+    </p>
+}
